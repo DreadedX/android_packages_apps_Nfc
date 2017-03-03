@@ -10,9 +10,9 @@ ifneq ($(NCI_VERSION),)
 LOCAL_CFLAGS += -DNCI_VERSION=$(NCI_VERSION) -O0 -g
 endif
 
-ifeq ($(BOARD_NO_NFC_T3T_HCE),true)
+# ifeq ($(BOARD_NO_NFC_T3T_HCE),true)
 LOCAL_CFLAGS += -DWITHOUT_T3T_HCE
-endif
+# endif
 
 LOCAL_CFLAGS += -Wall -Wextra -Wno-unused-parameter -Werror
 
